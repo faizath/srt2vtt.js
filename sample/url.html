@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="robots" content="none" />
+  <meta name="googlebot" content="none" />
+  <meta name="referrer" content="none" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
+  <link href="bootstrap.min.css" rel="stylesheet" />
+  <title>srt2vtt.js</title>
+</head>
+<body>
+  <div class="form-floating mt-1 mx-3">
+    <textarea class="form-control" id="srt" style="height:150px">1
+00:00:00,000 --> 00:00:10,000
+[Dramatic music throughout but no speaking]</textarea>
+    <label for="srt">.srt string</label>
+  </div>
+  <div class="d-grid gap-2 my-2 mx-3">
+    <button type="button" class="btn btn-primary" id="create">Create URL</button>
+  </div>
+  <div class="form-floating mx-3">
+    <input type="text" class="form-control" id="url"/>
+    <label for="url">URL</label>
+  </div>
+  <div class="d-grid gap-2 my-2 mx-3">
+    <a class="btn btn-primary" href="url">Create URL from srt string, srt2vtt.run()</a>
+    <a class="btn btn-primary" href="autorun">Autorun Mode, srt2vtt.run()</a>
+    <a class="btn btn-primary" href="multiple-autorun">Multiple Videos Autorun Mode, srt2vtt.run()</a>
+  </div>
+  <script src="../srt2vtt.js"></script>
+  <script>
+    document.querySelector("#create").onclick = function() {
+      document.querySelector("#url").value = srt2vtt.url(document.querySelector("#srt").value);
+    };
+  </script>
+</body>
+</html>

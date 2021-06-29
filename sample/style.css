@@ -1,0 +1,21 @@
+div {
+	max-width: 75vw;
+  	padding-top: 5%;
+}
+video {
+	width: 100%;
+  	postion: fixed;
+}
+h1, p {
+	color: white;
+  	font-family: Arial, Helvetica, sans-serif;
+}
+#desc {
+	padding-top: 0;
+}
+a {
+	color: #add8e6;
+}
+a:hover {
+	color: #fff;
+}
