@@ -28,8 +28,8 @@ Demo: https://faizath.github.io/srt2vtt.js/sample/url
 ```js
 srt2vtt.run();
 ```
-- Autorun (single video): https://faizath.github.io/srt2vtt.js/sample/autorun
-- Autorun (multiple videos): https://faizath.github.io/srt2vtt.js/sample/multiple-autorun
+- Demo (single video): https://faizath.github.io/srt2vtt.js/sample/autorun
+- Demo (multiple videos): https://faizath.github.io/srt2vtt.js/sample/multiple-autorun
 
 *The srt file must be able to be XMLHTTPREQUESTed
 
