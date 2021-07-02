@@ -31,7 +31,7 @@ srt2vtt.run();
 - Demo (single video): https://faizath.github.io/srt2vtt.js/sample/autorun
 - Demo (multiple videos): https://faizath.github.io/srt2vtt.js/sample/multiple-autorun
 
-*<i>The srt file must be able to be XMLHTTPREQUESTed</i>
+*<i>The srt file URL must be able to be XMLHTTPREQUESTed</i>
 
 # Contributing
 1.  Fork it (https://github.com/faizath/srt2vtt.js)
