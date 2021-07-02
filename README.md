@@ -1,5 +1,5 @@
 # srt2vtt.js
-Convert .srt (application/x-subrip) into .vtt (text/vtt) for HTML video
+Convert .srt (application/x-subrip) into .vtt (text/vtt) for HTML using Javascript
 
 # Installation
 Download the srt2vtt.js or Use these CDN
