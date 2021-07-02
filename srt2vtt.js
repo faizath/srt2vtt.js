@@ -47,6 +47,7 @@ window.srt2vtt = (function(){
     }
   };
   // License: https://github.com/silviapfeiffer/silviapfeiffer.github.io/blob/master/LICENSE
+  // Source : https://github.com/silviapfeiffer/silviapfeiffer.github.io/blob/master/index.html
   function srt2webvtt(data) {
       // remove dos newlines
       var srt = data.replace(/\r+/g, '');
