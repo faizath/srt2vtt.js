@@ -24,14 +24,14 @@ srt2vtt.url(SRT STRING);
 ```
 Demo: https://faizath.github.io/srt2vtt.js/sample/url
 
-## Automatically replace srt <track> with webvtt*
+## Automatically replace srt <track> with webvtt URL*
 ```js
 srt2vtt.run();
 ```
 - Demo (single video): https://faizath.github.io/srt2vtt.js/sample/autorun
 - Demo (multiple videos): https://faizath.github.io/srt2vtt.js/sample/multiple-autorun
 
-*The srt file must be able to be XMLHTTPREQUESTed
+*<i>The srt file must be able to be XMLHTTPREQUESTed</i>
 
 # Contributing
 1.  Fork it (https://github.com/faizath/srt2vtt.js)
