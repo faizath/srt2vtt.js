@@ -34,7 +34,7 @@ srt2vtt.run();
 *<i>The srt file URL must be able to be XMLHTTPREQUESTed</i>
 
 # Contributing
-1.  Fork it (https://github.com/faizath/srt2vtt.js)
+1.  Fork it (https://github.com/faizath/srt2vtt.js/fork)
 2.  Create your feature branch (git checkout -b my-new-feature)
 3.  Commit your changes (git commit -am 'Add some feature')
 4.  Push to the branch (git push origin my-new-feature)
