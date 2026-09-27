@@ -1,0 +1,27 @@
+{
+  "name": "srt2vtt",
+  "version": "2.0.0",
+  "description": "Convert SubRip subtitles to WebVTT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": { "import": "./dist/index.js", "require": "./dist/index.cjs" },
+    "./browser": { "import": "./dist/browser.js", "require": "./dist/browser.cjs" },
+    "./cli": "./dist/cli.js"
+  },
+  "bin": { "srt2vtt": "./dist/cli.js" },
+  "files": ["dist", "README.md", "LICENSE", "NOTICE"],
+  "scripts": {
+    "build": "tsup src/index.js src/browser.js src/cli.js --format esm,cjs --out-dir dist && tsup src/browser.js --format iife --global-name srt2vtt --out-dir dist/iife && cp dist/iife/browser.global.js srt2vtt.js",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run",
+    "lint": "eslint src test"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "typescript": "^5.0.0",
+    "tsup": "^8.0.0",
+    "vitest": "^2.0.0"
+  }
+}
