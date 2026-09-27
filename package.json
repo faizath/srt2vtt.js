@@ -5,15 +5,24 @@
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
-    ".": { "import": "./dist/index.js", "require": "./dist/index.cjs" },
-    "./browser": { "import": "./dist/browser.js", "require": "./dist/browser.cjs" },
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./browser": {
+      "types": "./dist/browser.d.ts",
+      "import": "./dist/browser.js",
+      "require": "./dist/browser.cjs"
+    },
     "./cli": "./dist/cli.js"
   },
   "bin": { "srt2vtt": "./dist/cli.js" },
   "files": ["dist", "README.md", "LICENSE", "NOTICE"],
   "scripts": {
-    "build": "tsup src/index.js src/browser.js src/cli.js --format esm,cjs --out-dir dist && tsup src/browser.js --format iife --global-name srt2vtt --out-dir dist/iife && cp dist/iife/browser.global.js srt2vtt.js",
+    "build": "tsup src/index.js src/browser.js src/cli.js --format esm,cjs --out-dir dist && cp src/index.d.ts src/browser.d.ts dist/ && tsup src/browser.js --format iife --global-name srt2vtt --out-dir dist/iife && cp dist/iife/browser.global.js srt2vtt.js",
     "prepublishOnly": "npm run build",
     "test": "vitest run",
     "lint": "eslint src test"
