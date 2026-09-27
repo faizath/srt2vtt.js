@@ -27,7 +27,7 @@
     <a class="btn btn-primary" href="autorun">Autorun Mode, srt2vtt.run()</a>
     <a class="btn btn-primary" href="multiple-autorun">Multiple Videos Autorun Mode, srt2vtt.run()</a>
   </div>
-  <script src="../srt2vtt.js"></script>
+  <script src="../dist/iife/browser.global.js"></script>
   <script>
     document.querySelector("#convert").onclick = function() {
       document.querySelector("#vtt").value = srt2vtt.convert(document.querySelector("#srt").value);
