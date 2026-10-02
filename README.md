@@ -1,17 +1,17 @@
-# srt2vtt
+# srt2vtt-js
 
 Convert SubRip (`.srt`) subtitles to WebVTT in Node.js or a browser.
 
 ## Installation
 
 ```sh
-npm install srt2vtt
+npm install srt2vtt-js
 ```
 
 ## Node API
 
 ```js
-import { convert } from "srt2vtt";
+import { convert } from "srt2vtt-js";
 
 const vtt = convert(srtString);
 ```
@@ -30,7 +30,7 @@ const vtt = convert(srtString);
 Import browser helpers separately:
 
 ```js
-import { url, revokeUrl, run } from "srt2vtt/browser";
+import { url, revokeUrl, run } from "srt2vtt-js/browser";
 
 const blobUrl = url(srtString);
 // use blobUrl as a <track src>, then:
