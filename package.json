@@ -1,5 +1,5 @@
 {
-  "name": "srt2vtt",
+  "name": "srt2vtt-js",
   "version": "2.0.0",
   "description": "Convert SubRip subtitles to WebVTT",
   "type": "module",
